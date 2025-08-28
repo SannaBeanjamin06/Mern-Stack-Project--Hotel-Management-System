@@ -1,0 +1,55 @@
+.footer {
+  width: 100%;
+  max-width: 1024px;
+  margin: 0 auto;
+  text-decoration: none;
+  font-size: 12px;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.fLists {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 50px;
+  flex-wrap: wrap;
+}
+
+.fList {
+  list-style: none;
+  padding: 0;
+  margin: 0 10px 20px 0;
+  text-align: left;
+}
+
+.fListItem {
+  margin-bottom: 10px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.fListItem:hover {
+  color: #dba622;
+  text-align: center;
+}
+
+.fText {
+  font-size: large;
+  color: gold
+}
+
+@media (max-width: 768px) {
+  .footer {
+    padding: 20px 10px;
+    color: #dba622;
+  }
+  
+  .fLists {
+    flex-direction: column;
+  }
+  
+  .fList {
+    margin-right: 0;
+  }
+}

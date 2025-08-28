@@ -1,0 +1,152 @@
+.about-us {
+  &__header {
+    background-color: #0e1111;
+    color: white;
+    padding: 1rem;
+    
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    &-logo {
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+
+    &-nav {
+      display: flex;
+      gap: 1rem;
+    }
+  }
+
+  &__hero {
+    position: relative;
+    height: 24rem;
+    background-color: #1f2937;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &-bg {
+      position: absolute;
+      inset: 0;
+      background-size: cover;
+      background-position: center;
+      background-image: url('about.jpg');
+      background-repeat: no-repeat;
+    }
+
+    &-title {
+      font-size: 3.55rem;
+      font-weight: bold;
+      color: lavender;
+      z-index: 10;
+    }
+  }
+
+  &__main {
+    max-width: 1200px;
+    margin: 0 auto;
+
+    padding: 2rem 1rem;
+
+    &-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 2rem;
+
+      @media (min-width: 768px) {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    &-image {
+      width: 100%;
+      height: 24rem;
+      background-size: cover;
+      background-position: center;
+      background-image: url('1.jpg');
+      background-repeat: no-repeat;
+    }
+
+    &-images {
+      width: 100%;
+      height: 24rem;
+      background-size: cover;
+      background-position: center;
+      background-image: url('2.jpg');
+      background-repeat: no-repeat;
+    }
+
+    &-icon {
+      color: #a3790e;
+      margin-bottom: 2rem;
+      width: 48px;
+      height: 48px;
+    }
+
+    &-title {
+      font-size: 2.5rem;
+      font-weight: 600;
+      margin-bottom: 1rem;
+    }
+
+    &-button {
+      background-color: #059669;
+      color: white;
+      padding: 0.5rem 1rem;
+      border-radius: 0.25rem;
+    }
+  }
+
+  &__services {
+    margin-top: 8rem;
+    text-align: center;
+    margin-bottom: 50px;
+
+    &-title {
+      font-size: 3.50rem;
+      font-weight: 600;
+      margin-bottom: 2rem;
+    }
+
+    &-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 2rem;
+
+      @media (min-width: 768px) {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+
+    &-icon {
+      margin: 0 auto 1rem;
+      color: #a3790e;
+    }
+
+    &-item-title {
+      font-size: 1.25rem;
+      font-weight: 600;
+      margin-bottom: 0.5rem;
+    }
+  }
+
+  &__footer {
+    
+    background-color: lavender;
+    color: white;
+    padding: 2rem;
+    margin-top: 3rem;
+    text-align: center;
+  }
+}
+
+.fillings{
+  background-color: #0e1111;
+  padding: 60px;
+  margin-bottom: 16px;
+}
